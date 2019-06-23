@@ -9,7 +9,7 @@ const routes: Routes = [
 {path: 'boxshadow', component: BoxshadowComponent},
 {path: '**', component: GradienteComponent},
 { path: '',
-    redirectTo: '/gradient',
+    redirectTo: 'gradient',
     pathMatch: 'full'
   },
 ];
