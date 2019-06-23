@@ -1,0 +1,6 @@
+ul.nav a:hover, ul.nav a:focus, .active
+{
+	background-color: rgb(34, 34, 34);
+	color: rgb(219, 219, 219);
+	border-radius: 0.4rem;
+}

@@ -1,0 +1,68 @@
+<div class="position-relative mt-0 text-center caja">
+	<div class="overlay" [style.background-image]="'linear-gradient(' + this.direction +',' + this.color1 + ',' + this.color2 + ')' | safe: 'style'">
+
+	</div>
+	<div class="col-md-5 p-lg-5 mx-auto jumpe">
+		<h1 class="display-5 font-weight-normal">CSS3 Gradient Generator</h1>
+		<p class="lead font-weight-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple’s marketing pages.</p>
+		<div class="direction mt-5">
+			<div class="container">
+				<div class="row justify-content-md-center">
+					<div class="col-1">
+						<label for="right" style="cursor: pointer">
+							<img src="assets/right-arrow.svg" width="20px">
+						</label>
+						<input type="radio" [(ngModel)]="direction" value="to right" name="direction" id="right">
+					</div>
+					<div class="col-1">
+						<label for="left" style="cursor: pointer">
+							<img src="assets/left-arrow.svg" width="20px">
+						</label>
+						<input type="radio" [(ngModel)]="direction" value="to left" name="direction" id="left">
+					</div>
+
+					<div class="col-1">
+						<label for="right_bottom" style="cursor: pointer">
+							<img src="assets/diagonal-arrow.svg" width="15px">
+						</label>
+						<input type="radio" [(ngModel)]="direction" value="to right bottom" name="direction" id="right_bottom">
+					</div>
+					<div class="col-1">
+						<label for="right_top" style="cursor: pointer">
+							<img src="assets/up-right-arrow.svg" width="15px">
+
+						</label>
+						<input type="radio" [(ngModel)]="direction" value="to right top" name="direction" id="right_top">
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="container mt-5">
+			<div class="row justify-content-md-center">
+				<div class="col col-lg-4">
+					<div class="form-group shadow bg-white mb-2" style="background-color: white; width: 40px; height: 40px; padding-top: 0.30rem; border-radius: 40px; margin: 0 auto">
+						<span type="text" class="form-control" name="color1" [(colorPicker)]="color1" [cpPosition]="'left'" [cpPresetColors]="['#fff', '#000', '#2889e9', '#e920e9', '#fff500', 'rgb(236,64,64)']" class="form-control" style="border-radius: 30px; width: 30px; height: 30px; margin: auto;"></span>
+					</div>
+					{{color1}}
+				</div>
+				<div class="col col-lg-4 text-center">
+					<div class="form-group shadow bg-white mb-2" style="background-color: white; width: 40px; height: 40px; padding-top: 0.30rem; border-radius: 40px; margin: 0 auto">
+						<span type="text" class="form-control" name="color1" [(colorPicker)]="color2" [cpPosition]="'bottom'" [cpPresetColors]="['#fff', '#000', '#2889e9', '#e920e9', '#fff500', 'rgb(236,64,64)']" class="form-control" style="border-radius: 30px; width: 30px; height: 30px; margin: auto;"></span>
+					</div>
+					{{color2}}
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<div class="container mt-5">
+	<h3>Yout code here</h3>
+	<pre>
+		background: linear-gradient({{this.direction}}, {{this.color1}}, {{this.color2}})
+	</pre>
+</div>
+
+
