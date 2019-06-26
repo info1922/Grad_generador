@@ -8,6 +8,7 @@ import { GradienteComponent } from './gradiente/gradiente.component';
 import { BoxshadowComponent } from './boxshadow/boxshadow.component';
 import { ColorPickerModule } from 'ngx-color-picker';
 import { SafePipe } from './pipes/safe.pipe';
+import { ClipboardModule } from 'ngx-clipboard';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { SafePipe } from './pipes/safe.pipe';
         BrowserModule,
         AppRoutingModule,
         FormsModule,
-        ColorPickerModule
+        ColorPickerModule,
+        ClipboardModule
     ],
     providers: [],
     bootstrap: [AppComponent]

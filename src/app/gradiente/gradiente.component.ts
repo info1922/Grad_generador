@@ -15,9 +15,23 @@ export class GradienteComponent implements OnInit {
     to_right = 'to right';
     direction = 'to right';
 
+    id = 1;
+    codigo = [
+        `background: linear-gradient(${this.direction}, ${this.color1}, ${this.color2});`,
+        `background: -webkit-linear-gradient(${this.direction}, ${this.color1}, ${this.color2});`,
+        `background: -moz-linear-gradient(${this.direction}, ${this.color1}, ${this.color2});`,
+        `background: -o-linear-gradient(${this.direction}, ${this.color1}, ${this.color2});`
+    ];
+
     constructor( private sanitizer: DomSanitizer) { }
 
+
+
     ngOnInit() {
+    }
+
+    selectMe(id) {
+        this.id = id;
     }
 
 }

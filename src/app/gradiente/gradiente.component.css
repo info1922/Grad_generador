@@ -26,3 +26,11 @@
 .jumpe input[type='radio'] {
 	visibility: hidden;
 }
+
+.select-active {
+	color: #fff;
+	width: 30px;
+	height: 30px;
+	background: rgb(117, 223, 255);
+	border-radius: 50%;
+}
