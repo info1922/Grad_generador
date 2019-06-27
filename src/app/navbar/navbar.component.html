@@ -1,4 +1,4 @@
-<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-dark shadow-sm" style="color: #999">
+<!-- <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-dark shadow-sm" style="color: #999">
   <a class="mr-3 mr-md-auto" [routerLink]="['/gradient']">
 	  <img src="assets/pantone.svg" alt="picker" width="30px">
   </a>
@@ -7,3 +7,26 @@
     <a class="p-2 " [routerLink]="['/boxshadow']" routerLinkActive="active" style="color: #999">Shadow</a>
   </nav>
 </div>
+ -->
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand ml-5" [routerLink]="['gradiente']"> <img src="assets/pantone.svg" alt="picker" width="50px"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+
+    </ul>
+	<ul class="navbar-nav">
+		<li class="nav-item">
+		<a class="nav-link" [routerLink]="['gradient']" routerLinkActive="active" style="color: #999">Gradient</a>
+		</li>
+		<li class="nav-item">
+
+			<a class="nav-link" [routerLink]="['/boxshadow']" routerLinkActive="active" style="color: #999">Shadow</a>
+		</li>
+	</ul>
+  </div>
+</nav>

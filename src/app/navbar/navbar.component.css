@@ -4,3 +4,20 @@ ul.nav a:hover, ul.nav a:focus, .active
 	color: rgb(219, 219, 219);
 	border-radius: 0.4rem;
 }
+
+.navbar {
+	margin-top: 10px;
+	z-index: 10 !important;
+
+}
+
+.navbar-light .navbar-toggler {
+	color: rgba(0, 0, 0, 0.5);
+	border-color: rgba(0, 0, 0, 0);
+}
+
+.navbar-toggler-icon {
+	background-color: teal;
+}
+
+

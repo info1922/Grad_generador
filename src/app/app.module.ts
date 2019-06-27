@@ -24,7 +24,7 @@ import { ClipboardModule } from 'ngx-clipboard';
         AppRoutingModule,
         FormsModule,
         ColorPickerModule,
-        ClipboardModule
+        ClipboardModule,
     ],
     providers: [],
     bootstrap: [AppComponent]

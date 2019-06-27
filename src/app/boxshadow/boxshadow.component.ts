@@ -1,15 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 
+
+
 @Component({
-  selector: 'app-boxshadow',
-  templateUrl: './boxshadow.component.html',
-  styleUrls: ['./boxshadow.component.sass']
+    selector: 'app-boxshadow',
+    templateUrl: './boxshadow.component.html',
+    styleUrls: ['./boxshadow.component.css']
 })
 export class BoxshadowComponent implements OnInit {
 
-  constructor() { }
+    horizontal = '5';
+    vertical = '5';
+    blur = '5';
+    spread = '5';
+    color = 'gray';
 
-  ngOnInit() {
-  }
+
+    constructor() { }
+
+    ngOnInit() {
+    }
 
 }

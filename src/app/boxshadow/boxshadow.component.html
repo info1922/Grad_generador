@@ -1,3 +1,53 @@
-<p>
-  boxshadow works!
-</p>
+<div class="position-relative text-center mt-4">
+	<div class="col-md-12 p-lg-5 mx-auto jumpe ">
+		<h1 class="display-5 font-weight-normal">Box Shadow Generator</h1>
+		<div class="direction mt-5">
+			<div class="container">
+				<div class="row ">
+					<div class="col-md-5 col-xs-12 col-sm-12 box m-auto">
+
+					</div>
+					<div class="col-md-6 col-xs-12 col-sm-12">
+						<h3>Box Shadow</h3>
+
+							<div class="form-row mt-3">
+								<div class="form-group col-md-6">
+									<label for="Horizontal">Horizontal</label>
+									<input type="range" class="form-control" id="horizontal" [(ngModel)]="horizontal">
+
+									{{horizontal}}
+								</div>
+								<div class="form-group col-md-6">
+									<label for="vertical">Vertical</label>
+									<input type="range" class="form-control" id="vertical" [(ngModel)]="vertical">
+									{{vertical}}
+								</div>
+							</div>
+
+							<div class="form-row">
+								<div class="form-group col-md-6">
+									<label for="blur">Blur</label>
+									<input type="range" class="form-control" id="blur" [(ngModel)]="blur">
+								</div>
+								<div class="form-group col-md-6">
+									<label for="spread">Spread</label>
+									<input type="range" class="form-control" id="spread" [(ngModel)]="spread">
+									{{vertical}}
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="form-group shadow bg-white mb-2" style="width: 40px; height: 40px; padding-top: 0.30rem; border-radius: 40px; margin: 0 auto">
+									<span type="text" [ngStyle]="{'background-color': color}" class="form-control" name="color" [(colorPicker)]="color" [cpPosition]="'top'" [cpPresetColors]="['#fff', '#000', '#2889e9', '#e920e9', '#fff500', 'rgb(236,64,64)']" class="form-control" style="border-radius: 30px; width: 30px; height: 30px; margin: auto; cursor: pointer;"></span>
+									<p class="mt-2">{{color}}</p>
+								</div>
+							</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+</div>
