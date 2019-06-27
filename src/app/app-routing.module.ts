@@ -4,8 +4,7 @@ import { GradienteComponent } from './gradiente/gradiente.component';
 import { BoxshadowComponent } from './boxshadow/boxshadow.component';
 
 const routes: Routes = [
-{	path: 'gradient', component: GradienteComponent
-},
+{path: '', component: GradienteComponent},
 {path: 'boxshadow', component: BoxshadowComponent},
 {path: '**', component: GradienteComponent},
 { path: '',
