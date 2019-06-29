@@ -9,10 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BoxshadowComponent implements OnInit {
 
-    horizontal = '5';
+    horizontal = '9';
     vertical = '5';
-    blur = '5';
-    spread = '5';
+    blur = '34';
+    spread = '0';
     color = 'gray';
 
 

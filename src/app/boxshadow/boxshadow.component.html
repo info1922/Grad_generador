@@ -1,10 +1,10 @@
 <div class="position-relative text-center mt-4">
 	<div class="col-md-12 p-lg-5 mx-auto jumpe ">
-		<h1 class="display-5 font-weight-normal">Box Shadow Generator</h1>
+		<h1 class="display-5 font-weight-normal" [style.text-shadow]="this.horizontal +'px '+this.vertical +'px '+ this.blur +'px '+ this.color">Box Shadow Generator</h1>
 		<div class="direction mt-5">
 			<div class="container">
 				<div class="row ">
-					<div class="col-md-5 col-xs-12 col-sm-12 box m-auto">
+					<div class="col-md-5 col-xs-12 col-sm-12 box m-auto" [style.box-shadow]="this.horizontal+'px '+ this.vertical+'px '+ this.blur + 'px '+ this.spread +'px '+ this.color | safe: 'style'">
 
 					</div>
 					<div class="col-md-6 col-xs-12 col-sm-12">
@@ -28,11 +28,12 @@
 								<div class="form-group col-md-6">
 									<label for="blur">Blur</label>
 									<input type="range" class="form-control" id="blur" [(ngModel)]="blur">
+									{{blur}}
 								</div>
 								<div class="form-group col-md-6">
 									<label for="spread">Spread</label>
 									<input type="range" class="form-control" id="spread" [(ngModel)]="spread">
-									{{vertical}}
+									{{spread}}
 								</div>
 							</div>
 							<div class="form-group">
@@ -44,6 +45,17 @@
 
 					</div>
 				</div>
+
+			</div>
+
+			<div class="container mt-5">
+				<h3>Yout code here</h3>
+				<pre class="language-css">
+					<code class=" language-css" innerHTML="<span class='token property'>box-shadow</span><span class='token punctuation'>:</span> {{this.horizontal}}px {{this.vertical}}px {{this.blur}}px {{this.spread}}px {{this.color}}">
+
+					</code>
+
+				</pre>
 
 			</div>
 		</div>
