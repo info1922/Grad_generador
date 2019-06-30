@@ -10,7 +10,7 @@
       "prefix": "app",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "sass"
+          "style": "css"
         }
       },
       "architect": {
@@ -28,7 +28,7 @@
 			  "src/_redirects"
             ],
             "styles": [
-              "src/styles.scss",
+              "src/styles.css",
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
 			  "./node_modules/prismjs/themes/prism.css",
 			  "./node_modules/prismjs/themes/prism-okaidia.css"

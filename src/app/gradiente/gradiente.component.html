@@ -2,9 +2,8 @@
 	<div class="overlay" [style.background-image]="'linear-gradient(' + this.direction +',' + this.color1 + ',' + this.color2 + ')' | safe: 'style'">
 
 	</div>
-	<div class="col-md-5 p-lg-5 mx-auto jumpe">
+	<div class="col-md-5 p-lg-2 mx-auto jumpe">
 		<h1 class="display-5 font-weight-normal">CSS3 Gradient Generator</h1>
-		<p class="lead font-weight-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple’s marketing pages.</p>
 		<div class="direction mt-5">
 			<div class="container">
 				<div class="row justify-content-md-center justify-content-between">
@@ -42,13 +41,13 @@
 			<div class="row justify-content-md-center">
 				<div class="col col-lg-4">
 					<div class="form-group shadow bg-white mb-2" style="background-color: white; width: 40px; height: 40px; padding-top: 0.30rem; border-radius: 40px; margin: 0 auto">
-						<span type="text" class="form-control" name="color1" [(colorPicker)]="color1" [cpPosition]="'bottom'" [cpPresetColors]="['#fff', '#000', '#2889e9', '#e920e9', '#fff500', 'rgb(236,64,64)']" class="form-control" style="border-radius: 30px; width: 30px; height: 30px; margin: auto; cursor: pointer;"></span>
+						<span type="text" [ngStyle]="{'background-color': color1}" class="form-control" name="color1" [(colorPicker)]="color1" [cpPosition]="'bottom'" [cpPresetColors]="['#fff', '#000', '#2889e9', '#e920e9', '#fff500', 'rgb(236,64,64)']" class="form-control" style="border-radius: 30px; width: 30px; height: 30px; margin: auto; cursor: pointer;"></span>
 					</div>
 					{{color1}}
 				</div>
 				<div class="col col-lg-4 text-center">
 					<div class="form-group shadow bg-white mb-2" style="background-color: white; width: 40px; height: 40px; padding-top: 0.30rem; border-radius: 40px; margin: 0 auto">
-						<span type="text" class="form-control" name="color1" [(colorPicker)]="color2" [cpPosition]="'left'" [cpPresetColors]="['#fff', '#000', '#2889e9', '#e920e9', '#fff500', 'rgb(236,64,64)']" class="form-control" style="border-radius: 30px; width: 30px; height: 30px; margin: auto; cursor: pointer;"></span>
+						<span type="text" [ngStyle]="{'background-color': color2}" class="form-control" name="color2" [(colorPicker)]="color2" [cpPosition]="'left'" [cpPresetColors]="['#fff', '#000', '#2889e9', '#e920e9', '#fff500', 'rgb(236,64,64)']" class="form-control" style="border-radius: 30px; width: 30px; height: 30px; margin: auto; cursor: pointer;"></span>
 					</div>
 					{{color2}}
 				</div>
